@@ -1,0 +1,13 @@
+name: reddit-trivia-challenge
+version: 1.0.0
+description: An interactive trivia game for Reddit using Devvit Web
+assets:
+  - name: icon
+    path: ./assets/icon.png
+permissions:
+  - storage
+  - user
+web:
+  entrypoint: dist/index.html
+  build_command: npm run build
+  dev_server_port: 3000
